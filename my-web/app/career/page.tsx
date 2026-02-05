@@ -14,13 +14,7 @@ export default function CareerPage() {
       desc: ["친화력과 대응력및 판단력을 이용하여 많은 사람들의 요청에 알맞는 대응방식과 해결능력 터득"],
       color: "border-blue-500"
     },                                                      
-    {
-      title: "AI헬스케어 부트캠프 수료",
-      company: "오즈코딩스쿨",
-      date: "2026.01~2026.07",
-      desc: ["웹개발의 프론트엔드와 백엔드 , AI전문지식 습득과정"],
-      color: "border-purple-500"
-    }
+    
   ];
 
   return (
