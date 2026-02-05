@@ -36,20 +36,14 @@ export default function StudyPage() {
           isDark ? 'bg-slate-800/50 border-slate-700 shadow-xl' : 'bg-white border-slate-200 shadow-sm'
         }`}>
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <Image 
-              src="/images/coding-note.png"
-              alt="코딩 학습 노트"
-              width={150}
-              height={150}
-              className={`rounded-full shadow-md transition-opacity duration-500 ${isDark ? 'opacity-80' : 'opacity-100'}`}
-            />
+            
             <div className="text-center md:text-left">
              <h1 className={`text-4xl font-black mb-2 transition-colors flex items-center justify-center md:justify-start gap-2 ${
                              isDark ? 'text-white' : 'text-slate-800'}`}>📓<span>학습 기록장</span></h1>
               <p className={`text-lg transition-colors ${
                 isDark ? 'text-slate-400' : 'text-slate-500'
               }`}>
-                매일 배운 코딩 지식과 성장을 기록하는 공간입니다.
+                그동안 배운 각종 지식과 성장을 기록하는 공간입니다.
               </p>
             </div>
           </div>
@@ -62,19 +56,41 @@ export default function StudyPage() {
               ? 'bg-slate-800/40 border-slate-700 hover:border-blue-500' 
               : 'bg-white border-slate-200 hover:border-blue-300 shadow-sm'
           }`}>
+            
             <div className="flex justify-between items-center mb-4">
               <span className={`px-3 py-1 rounded-full text-sm font-bold ${
                 isDark ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-600'
               }`}>2026.01.03</span>
-            </div>
-            <h2 className={`text-2xl font-bold mb-3 ${isDark ? 'text-slate-100' : 'text-slate-800'}`}>
+              </div>
+               <h2 className={`text-2xl font-bold mb-3 ${isDark ? 'text-slate-100' : 'text-slate-800'}`}>
               Next.js 전역 테마 시스템 구축
+              
             </h2>
+            
             <p className={`${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
               Context API를 사용하여 프로젝트 전체의 다크모드 상태를 관리하는 방법을 배웠다. 
               이제 페이지를 이동해도 사용자의 테마 설정이 유지된다.
             </p>
           </div>
+<div className="space-y-6">
+  <div className={`p-8 rounded-2xl border transition-all duration-500 ${
+    isDark 
+      ? 'bg-slate-800/40 border-slate-700 hover:border-purple-500' 
+      : 'bg-white border-slate-200 hover:border-purple-300 shadow-sm'
+  }`}>
+    <div className="flex justify-between items-center mb-4">
+      <span className={`px-3 py-1 rounded-full text-sm font-bold ${
+        isDark ? 'bg-purple-900/50 text-purple-300' : 'bg-purple-100 text-purple-600'
+      }`}>2026.02.05</span>
+    </div>
+    <h2 className={`text-2xl font-bold mb-3 ${isDark ? 'text-slate-100' : 'text-slate-800'}`}>
+      git을 통하여 포트폴리오사이트 공유 완료
+    </h2>
+    <p className={`${isDark ? 'text-slate-400' : 'text-slate-600'}`}>
+      LLM AI의 도움을 받아 git을 이용하여 온라인으로 포트폴리오사이트를 유포햇다.
+    </p>
+  </div>
+</div>
         </div>
       </div>
     </main>

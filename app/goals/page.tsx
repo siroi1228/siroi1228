@@ -36,7 +36,6 @@ export default function GoalsPage() {
         </h1>
 
         <div className="space-y-6">
-          {/* 1. 프로그래밍 마스터 카드 */}
           <div className={`p-6 rounded-xl border-l-4 transition-all ${
             isDark 
               ? 'bg-slate-800/80 border-yellow-500 text-slate-100 shadow-lg' 
@@ -48,7 +47,6 @@ export default function GoalsPage() {
             </p>
           </div>
 
-          {/* ... 이하 생략 (기존 카드 코드 유지) ... */}
           <div className={`p-6 rounded-xl border-l-4 transition-all ${
             isDark 
               ? 'bg-slate-800/80 border-blue-500 text-slate-100 shadow-lg' 
@@ -58,14 +56,25 @@ export default function GoalsPage() {
             <p className={`mt-2 ${isDark ? 'text-slate-300' : 'text-gray-600'}`}>
               매일 아침 30분 운동하고, 건강한 식단 유지하기.
             </p>
-          </div>
 
+          </div>
+          <div className={`p-6 rounded-xl border-l-4 transition-all ${
+            isDark 
+              ? 'bg-slate-800/80 border-pink-500 text-slate-100 shadow-lg' 
+              : 'bg-yellow-50 border-pink-400 text-gray-800'
+          }`}>
+            <h2 className="text-xl font-bold">3. 유투브채널 운영</h2>
+            <p className={`mt-2 ${isDark ? 'text-slate-300' : 'text-gray-600'}`}>
+              AI툴 연습을 위한 유튜브채널을 운영하기
+            </p>
+          </div>
+        
           <div className={`p-6 rounded-xl border-l-4 transition-all duration-500 ${
   isDark 
     ? 'bg-slate-800 border-green-500 text-slate-100 shadow-lg' // border-l-4에 어울리는 선 색상 추가
     : 'bg-green-50 border-green-400 text-gray-800'
 }`}>
-  <h2 className="text-xl font-bold">3. 독서와 기록</h2>
+  <h2 className="text-xl font-bold">4. 독서와 기록</h2>
   <p className={`mt-2 ${isDark ? 'text-slate-300' : 'text-gray-600'}`}>
     매일 1시간씩 독서하고 내용을 블로그에 기록하기
   </p>

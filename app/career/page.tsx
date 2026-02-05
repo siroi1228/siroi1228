@@ -15,6 +15,14 @@ export default function CareerPage() {
       color: "border-blue-500"
     },                                                      
     
+    {
+      title: "직원관리및 사업계획",
+      company: "스타트업 네소",
+      date: "2024.06 ~ 2025.01",
+      desc: ["스타트기업의 체계구축과 매니저고용후 직원교육체계및 기획을 함으로써 선택과 책임감에 대해 터득"],
+      color: "border-red-500"
+    },
+
   ];
 
   return (
@@ -62,7 +70,7 @@ export default function CareerPage() {
     : 'bg-white border-gray-100 shadow-lg hover:shadow-2xl hover:border-red-200'
 }`}>
   <div className="mb-6">
-    <span className="text-5xl mb-6 block group-hover:scale-110 transition-transform">📺</span>
+    <span className="text-5xl mb-6 block group-hover:scale-105 transition-transform">📺</span>
     <h3 className={`text-2xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-800'}`}>나의 유튜브</h3>
     <p className={isDark ? 'text-slate-400' : 'text-gray-500'}>
       영상으로 기록하는 <br/>개발 및 일상 이야기입니다.
